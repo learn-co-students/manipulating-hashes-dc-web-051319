@@ -6,8 +6,12 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
-
-  
-
+  flatArray = []
+  groceries.each do |foodGroup, data|
+    data.each do |key, value|
+        flatArray << key
+    end
+  end
+  flatArray
 end
+second_challenge
