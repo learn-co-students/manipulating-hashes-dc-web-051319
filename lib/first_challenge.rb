@@ -9,13 +9,14 @@ def first_challenge
     "Freddy Mercury" => {
       name: "Freddy",
       email: "freddy@mercury.com",
-      favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
+      favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"] 
     }
   }
 
   #your code here
-
-
+ice_cream = contacts["Freddy Mercury"][:favorite_icecream_flavors]
+ice_cream.delete("strawberry")
+ice_cream
   #remember to return your newly altered contacts hash!
   contacts
 end
